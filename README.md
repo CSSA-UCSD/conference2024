@@ -1,8 +1,8 @@
 # UCSD Cognitive Science Student Association Conference 2024
-Note: The `master` branch is the code from last year's conference. You can consider each branch as different versions of the code, such as different features or designs before merging into the main code that changes the deployed website.
+
 ## Git Instructions
 ### Getting Started
-* To clone this repository, run `git clone https://github.com/CSSA-UCSD/conference2022.git` in your terminal. *Any edits made in the `main` branch and pushed to this remote repository will change the actual live website.* If it's just local edits on your computer (without pushing the changes), the live deployed website won't be affected. 
+* To clone this repository, run `git clone https://github.com/CSSA-UCSD/conference2024.git` in your terminal. *Any edits made in the `main` branch and pushed to this remote repository will change the actual live website.* If it's just local edits on your computer (without pushing the changes), the live deployed website won't be affected. 
 * After cloning, you'll be in the `main` branch (you should be able to tell in your terminal). Start by working on a new branch by running `git checkout -b name_of_branch` where `name_of_branch` can by your *name* if you'd like to try developing a different version/design of the website, or the *feature* you'd like to implement onto the current conference page. This command should take you to the new branch as you create it.
 * To check other branches on your laptop, run `git branch`. To switch to other branches, run `git checkout name_of_branch`. For example, running `git checkout main` will switch the version of your code to the code running the actual website. 
 ### Checking for Code Updates
