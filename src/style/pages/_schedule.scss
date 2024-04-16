@@ -1,0 +1,140 @@
+.schedule {
+    .day-schedule {
+        display: flex;
+        justify-content: space-between;
+        font-family: $body-font;
+        flex-wrap: wrap;
+
+        .row {
+            margin-right: 15px;
+            margin-left: 15px;
+            
+            .content {
+                width: 100%;
+                
+                .day {
+                    display: flex;
+                    align-items: flex-start;
+
+                    // for Day 1, Day 2 etc.
+                    .planet {
+                        transform: scaleY(-1); // Flips into correct orientation
+                        object-fit: contain;
+                    }
+
+                    & > .content {                
+                        h1 {
+                            padding-left: 0px;
+                            font-size: 3rem;
+                            margin-bottom: 0;
+                        }
+
+                        h4 {
+                            color: $accent-2;
+                        }
+
+                        h4, span {
+                            font-size: 1.7rem;
+                            font-family: $header-font;
+                        }
+                    }
+
+                    .location {
+                        display: flex;
+                        margin-bottom: 30px;
+                    }
+
+                    #cssa {
+                        font-style: italic;
+                        font-family: $body-font;
+                    }
+
+                }
+            }
+        }
+
+        .sidebar {
+            z-index: 100;
+            width: 100%;
+            display: flex;
+            
+            @include media-lg {
+                // width: auto;
+                top: 40px;
+            }
+
+            @media (max-width: 700px) {
+                // padding-left: 0 !important;
+                // padding-right: 0 !important;
+                // width: auto;
+            }
+
+            @media (max-width: 420px) {
+                padding-top: 1rem;
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+                li {
+                    margin: 0.5rem;
+                }
+            }
+
+            ul {
+                display: inherit;
+                width: 100%;
+                justify-content: space-around;                
+            }
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-transform: uppercase;
+                    border-radius: 1rem;
+                    border: solid 3px $gradient-c-1;
+                    padding: 0.25rem 1.5rem;
+                    color: $accent-1;
+
+                    @media (min-width: 995px) {
+                        padding: 0.25rem 4.5rem;
+                    }
+                }
+                &:hover {
+                    a {
+                        border: solid 3px rgba($gradient-c-1, 0.5);
+                        color: rgba($gradient-c-1, 0.5);
+                    }
+                }
+            }
+            
+            
+        }
+
+    }
+
+        /*
+        position: absolute;
+        border: 0.025rem solid transparent;
+        border-radius: 16px;
+        background: $primary-light;
+        background-clip: padding-box;
+        padding: 0.25rem;
+
+        &::after {
+            position: absolute;
+            top: -0.15rem; bottom: -0.15rem;
+            left: -0.15rem; right: -0.15rem;
+            background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
+            content: '';
+            z-index: -1;
+            border-radius: 16px;
+        }
+    }
+        */
+    @media (max-width: 700px) {
+        overflow: visible;
+    }
+}

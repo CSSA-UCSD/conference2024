@@ -1,0 +1,39 @@
+// resets
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-all {
+    @media screen and (min-width: 0px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}

@@ -1,0 +1,128 @@
+// font imports
+@font-face {
+    font-family: Futura-Heavy;
+    src: url("../../assets/fonts/futura/Futura Heavy font.ttf") format('truetype'); 
+}
+@font-face {
+    font-family: Futura-Medium;
+    src: url("../../assets/fonts/futura/futura medium bt.ttf") format('truetype'); 
+}
+@font-face {
+    font-family: Futura-Med-Ital;
+    src: url("../../assets/fonts/futura/Futura Medium Italic font.ttf") format('truetype'); 
+}
+
+// fonts
+$header-font: 'Futura-Heavy', sans-serif;
+$header-font-2: 'Futura-Med-Ital', sans-serif;
+$small-header: 'Futura-Medium', sans-serif;
+$body-font: 'Helvetica', sans-serif;
+
+// 2023 colors
+$primary-dark: #ffffff;
+$accent-1: #D7009B; 
+$accent-2: #FF7BDA; 
+$accent-3: #39FFB8;
+$accent-4: #01DFED;
+
+// old colors
+$primary-light: #001437;
+$night-ocean: #2d10a4;
+$digital-blue: #0484fb;
+$gradient-c-1: #EF0195;
+$gradient-c-2: #876AEC;
+$gradient-c-3: #2BC6DE;
+$gradient-c-4: #33E9C6;
+$gradient-c-5: #89FDCC;
+$gradient-w-1: #DDFD8C;
+$gradient-w-2: #E6F93C;
+$gradient-w-3: #F8D632;
+$gradient-w-4: #FBCA49;
+$gradient-w-5: #F48D54;
+// old accents
+//$accent-1: #f7da28;
+//$accent-2: #FE2047;
+//$accent-3: #FEC60F;
+//$accent-4: #FF007B;
+
+// body colors
+body {
+    background-color: black !important;
+    color: $primary-dark;
+}
+
+// adjust max container size
+.container {
+    // Large devices (desktops)
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+// type scale
+h1, h3, h6 {
+    font-family: $header-font;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $body-font;
+}
+
+a {
+    font-family: $header-font;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+
+    &:focus {
+        outline:0 !important;
+    }
+}
+
+input[type="button"] {
+    border: none !important;
+    outline: none !important;
+}
+
+.gradient-button {
+    border-radius: 1rem;
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+    color: $primary-light;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(135deg, $accent-1, $gradient-w-5, $gradient-c-2, $digital-blue, $gradient-c-5);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px $primary-light inset;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: none;
+
+        a {
+            color: $primary-light !important;
+        }
+    }
+}
+
+:export {
+    primaryLight: $primary-light;
+    primaryDark: $primary-dark;
+
+    accent1: $accent-1;
+    accent2: $accent-2;
+    accent3: $accent-3;
+  }
+  

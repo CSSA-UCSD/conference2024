@@ -1,0 +1,32 @@
+/*
+footer {
+    i:hover {
+            border-radius: 20px;
+            background: rgba(146, 249, 243, 0.5);
+            width: 30px;
+            height: 30px;
+            transition: all .3s ease;
+    }
+
+}
+*/
+
+footer {
+    font-family: $header-font;
+    .copywrite {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    #logo {
+        height: 2rem;
+        width: fit-content;
+        margin: 0 0.5rem;
+    }
+    .fb-ic {
+        //color: linear-gradient(180deg, rgba(0,255,164,1) 0%, rgba(3,240,255,1) 100%);
+        &:hover {
+            //color: linear-gradient(180deg, rgba(0,255,164,1) 0%, rgba(3,240,255,1) 100%);
+            //background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);
+        }
+    }
+}

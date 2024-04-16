@@ -1,0 +1,14 @@
+.register {
+    h3 {
+        font-size: 2.5rem;
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+
+        @include media-md {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    }
+}

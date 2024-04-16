@@ -1,0 +1,175 @@
+/* Click Here by Andreas Storm
+ * src: https://codepen.io/avstorm/pen/oqKbLq
+ */
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 13px 22px;
+  transition: all .2s ease;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba($accent-1,.5);
+    width: 46px;
+    height: 46px;
+    transition: all .3s ease;
+  }
+  span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    vertical-align: middle;
+  }
+  svg {
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $primary-dark;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+  }
+  &:hover {
+    a {
+        text-decoration: none;
+    }
+    &:before {
+      width: 100%;
+      background: rgba($accent-1,1);
+    }
+    svg {
+      transform: translateX(0);
+    }
+  }
+  &:active {
+    transform: scale(.96);
+  }
+
+}
+
+/*
+.sidebar {
+  .cta {
+    padding: 0px 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 15px;
+      background: rgba($accent-1,.5);
+      width: 30px;
+      height: 30px;
+      transition: all .3s ease;
+    }
+    span {
+      position: relative;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+    svg {
+      top: 0;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+        background: rgba($accent-1,1);
+      }
+      svg {
+        transform: translateX(0);
+      }
+    }
+    &:active {
+      transform: scale(.96);
+    }
+  }
+}
+*/
+
+.events {
+  &-buttons {
+    padding-bottom: .5rem !important;
+  }
+  .cta {
+    padding: 0 15px;
+    &:before {
+      top: 0px;
+      border-radius: 15px;
+      width: 30px;
+      height: 30px;
+    }
+    span {
+      position: relative;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+        background: rgba($accent-1,1);
+      }
+      svg {
+        transform: translateX(0);
+      }
+    }
+    &:active {
+      transform: scale(.96);
+    }
+  }
+  .events-btn.small-title {
+    font-size: 16px;
+  }
+}
+
+@include media-md {
+  .cta {
+    &:before {
+      top: 3px;
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
+
+@include media-lg {
+  .cta {
+    &:before {
+      top: 5px;
+    }
+  }
+  .events {
+    .cta {
+      padding: 0 15px;
+      &:before {
+        top: 5px;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  /*
+  .sidebar{
+    .cta {
+      &:before {
+        top: 3px;
+      }
+    }
+  }
+  */
+}

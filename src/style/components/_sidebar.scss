@@ -1,0 +1,15 @@
+.sidebar {
+    padding: 1.5rem;
+
+    &-section {
+        padding-bottom: 2rem;
+    }
+    &-subtitle {
+        margin: 0;
+        color: rgba($primary-dark,0.5);
+    }
+    &-title {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+}
