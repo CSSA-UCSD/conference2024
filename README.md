@@ -1,4 +1,4 @@
-# UCSD Cognitive Science Student Association Conference 2023
+# UCSD Cognitive Science Student Association Conference 2024
 Note: The `master` branch is the code from last year's conference. You can consider each branch as different versions of the code, such as different features or designs before merging into the main code that changes the deployed website.
 ## Git Instructions
 ### Getting Started
