@@ -4,6 +4,7 @@
         text-decoration: none;
         color: rgba($primary-dark, 0.7);
     }
+    color: #FFF;
 }
 @include media-md {
     .nav-link {
@@ -16,6 +17,7 @@
     z-index: 100;
     font-size: 22px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     .container {
         margin: 0 !important;
@@ -27,16 +29,16 @@
 
         #register {
             border-radius: 15px;
-            border: 3px solid white;
-            background: linear-gradient(125.99deg, rgba(101, 17, 208, 0.75) 24.81%, rgba(1, 223, 237, 0.75) 95.13%);
+            background: linear-gradient(244deg, rgba(185, 249, 253, 0.75) 37.36%, rgba(255, 255, 255, 0.75) 64.99%);
+            border: 3px solid #6C6288;
 
             span {
-                color: white;
+                color: #0C1A3D;
             }
 
-            &:hover {
-                background: linear-gradient(125.99deg, rgba(215, 0, 155, 0.75) 24.81%, rgba(69, 17, 208, 0.75) 95.13%);
-            }
+            // &:hover {
+            //     background: linear-gradient(125.99deg, rgba(215, 0, 155, 0.75) 24.81%, rgba(69, 17, 208, 0.75) 95.13%);
+            // }
         }
 
         @media (max-width: 576px) {

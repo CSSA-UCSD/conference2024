@@ -8,7 +8,6 @@ class Footer extends React.Component {
         const socialIconComponent = socialMedia.map(item => < SocialIcons key={item.id} item={item}/>);
         return (
             <footer className="page-footer font-small cyan darken-3" id="social-media">
-                <hr></hr>
                 <div className="container">
                     <div className="col py-3">
                         <div className="mb-1 d-flex justify-content-center">
@@ -17,8 +16,10 @@ class Footer extends React.Component {
                     </div>
                 </div>
 
-                <div className="footer-copyright justify-content-center py-3 d-flex align-items-center"><span className="copywrite">© 2022 </span>
+                <div className="footer-copyright justify-content-center py-3 d-flex align-items-center">
                     <a href="https://cssa-ucsd.org/"> <img id="logo" src={CSSALogo} alt="CSSA"></img></a>
+                    <br></br>
+                    <span className="copywrite">© 2024 </span>
                 </div>
 
             </footer>

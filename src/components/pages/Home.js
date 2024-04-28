@@ -9,10 +9,13 @@ import DayScheduleData from "../data/home/DayScheduleData";
 import SpeakerPreview from "../components/home/SpeakerPreview";
 import SpeakerData from "../data/SpeakerData";
 
+import Navbar from "../components/Navbar";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import IconSVG from '../../assets/logo2023SVG.svg';
+import cssaLogo from "../../assets/cssaLogo.png";
+import crack from "../../assets/crack.png";
 
 const Home = () => {
 
@@ -56,65 +59,63 @@ const Home = () => {
 
     return (
         <div className="container">
-            <div className="row flex-nowrap py-5 home-title">
-                <div className="col-sm-3 p-0">
-                    <h1>Beyond</h1>
-                    <h1 className="text-nowrap ital" id="ital">
-                        The Mind
-                    </h1>
-                    <p><i>CSSA's National Cognitive Science Conference is happening from May 1st to May 3rd!</i></p>
-                </div>
-                <div className="home-img col-sm-6 d-flex align-items-center">
-                    <img src={IconSVG} alt="conference icon" />
-                </div>
-                <div className="col-sm-3 p-0 d-flex align-items-end">
-                    <h1 className="text-center ital" id="subhead">Cognitive Capacities</h1>
-                </div>
+            <div className="sideImg">
+                <img src={crack}></img> 
             </div>
-            <div id="about">
-                <h3><span className="ital">01</span> About</h3>
-                <p>
-                    Delving into the depths of the brain, this year’s Conference aims to explore the abilities of the mind.
-                    This year’s theme of <strong><em>"Beyond the Mind: Cognitive Capacities"</em></strong> will focus on comparing
-                    and contrasting phenomena in the real world and weighing logic vs creativity.
-                </p>
-                <p>
-                    Attendees and presenters include distinguished researchers and scientists, reputable companies in related industries,
-                    and lab representatives. This annual conference is the perfect event to attend if you are interested in academic
-                    and career advancement opportunities, or simply want to deepen your knowledge of how the diverse applications of
-                    Cognitive Science are shaping the future.
-                </p>
-            </div> 
-            {/* <div className="home-intro-video py-5">
-                    <iframe title="conference-2022" width="100%" height="500" src="https://drive.google.com/file/d/1aVVW13imnnutBcy_ufSnogzBe6UB2o7D/view?pli=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div> */}
-            <div className="speakers">
-                <div className="container py-5">
-                    <div className="speakers-title header-gradient">
-                        <h3><Link to='/speakers' className='nav-link'><span className="ital">02</span> Speakers</Link></h3>
-                        {/* <p className="px-5 mt-4">Soon to be released!</p> */}
-                        <div className="speakers-carousel">
-                            <Carousel 
-                            responsive={responsive}
-                            infinite={true}
-                            autoPlay={true}
-                            autoPlaySpeed={3500}
-                            centerMode={true}
-                            arrows={true}
-                            renderButtonGroupOutside={true} 
-                            customButtonGroup={<ButtonGroup />}
-                            >
-                            {SpeakerComponent}
-                            </Carousel>
+            <div className="right-content">
+                <Navbar />
+                <div className="row flex-nowrap py-5 home-title">
+                    <div className="col-sm-3 p-0">
+                        <h1>Through the Looking Glass</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                    <div className="home-img col-sm-6 d-flex align-items-center">
+                        <img src={cssaLogo} alt="conference icon" />
+                    </div>
+                    {/* <div className="col-sm-3 p-0 d-flex align-items-end">
+                        <h1 className="text-center ital" id="subhead">Cognitive Capacities</h1>
+                    </div> */}
+                </div>
+                <div id="about">
+                    <h2>About</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident.
+                    </p>    
+                </div> 
+                {/* <div className="home-intro-video py-5">
+                        <iframe title="conference-2022" width="100%" height="500" src="https://drive.google.com/file/d/1aVVW13imnnutBcy_ufSnogzBe6UB2o7D/view?pli=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div> */}
+                <div className="speakers">
+                    <div className="container py-5">
+                        <div className="speakers-title header-gradient">
+                            <h2><Link to='/speakers' className='header-link'>Speakers of the Day</Link></h2>
+                            {/* <p className="px-5 mt-4">Soon to be released!</p> */}
+                            {/* <div className="speakers-carousel">
+                                <Carousel 
+                                responsive={responsive}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={3500}
+                                centerMode={true}
+                                arrows={true}
+                                renderButtonGroupOutside={true} 
+                                customButtonGroup={<ButtonGroup />}
+                                >
+                                {SpeakerComponent}
+                                </Carousel>
+                            </div> */}
                         </div>
                     </div>
                 </div>
+                <div className="schedule">
+                    <h2><Link to='/schedule' className='header-link'> Schedule</Link></h2>
+                    {ScheduleComponent}
+                </div>
             </div>
-            <div className="schedule">
-                <h3><Link to='/schedule' className='nav-link'><span className="ital">03</span> Schedule</Link></h3>
-                {ScheduleComponent}
-            </div>
-
         </div>
     );
 }

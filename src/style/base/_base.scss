@@ -1,22 +1,8 @@
-// font imports
-@font-face {
-    font-family: Futura-Heavy;
-    src: url("../../assets/fonts/futura/Futura Heavy font.ttf") format('truetype'); 
-}
-@font-face {
-    font-family: Futura-Medium;
-    src: url("../../assets/fonts/futura/futura medium bt.ttf") format('truetype'); 
-}
-@font-face {
-    font-family: Futura-Med-Ital;
-    src: url("../../assets/fonts/futura/Futura Medium Italic font.ttf") format('truetype'); 
-}
-
 // fonts
-$header-font: 'Futura-Heavy', sans-serif;
-$header-font-2: 'Futura-Med-Ital', sans-serif;
+$header-font: "Irish Grover", system-ui;
+$header-font-2: 'Jomhuria', serif;
 $small-header: 'Futura-Medium', sans-serif;
-$body-font: 'Helvetica', sans-serif;
+$body-font: 'Jost', sans-serif;
 
 // 2023 colors
 $primary-dark: #ffffff;
@@ -60,9 +46,17 @@ body {
 }
 
 // type scale
-h1, h3, h6 {
+h1, h3 {
     font-family: $header-font;
     text-transform: uppercase;
+}
+
+h2 {
+    font-family: $header-font-2;
+}
+
+h6 {
+    font-family: $body-font;
 }
 
 p {
@@ -70,12 +64,16 @@ p {
 }
 
 a {
-    font-family: $header-font;
-
-    &:hover {
-        color: inherit;
-    }
+    color: #0C1A3D;
 }
+
+// a {
+//     font-family: $header-font;
+
+//     &:hover {
+//         color: inherit;
+//     }
+// }
 
 button {
     background: none;

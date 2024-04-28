@@ -5,6 +5,7 @@ import Speaker from "../components/speakers/Speaker"
 import SpeakerPreview from "../components/home/SpeakerPreview";
 import SpeakerData from "../data/SpeakerData";
 import DayScheduleData from "../data/home/DayScheduleData";
+import Navbar from "../components/Navbar";
 
 function Events() {
 
@@ -17,6 +18,7 @@ function Events() {
 
     return (
         <div className="container pb-5">
+            <Navbar/>
             { DayScheduleData.map((day) => {
                     let daySpeakers = SpeakerData.filter(speaker => speaker.day === day.id);
                     return <div className="mt-5" key={day.id}>

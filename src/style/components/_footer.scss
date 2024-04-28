@@ -12,6 +12,7 @@ footer {
 */
 
 footer {
+    background-color: #6C6288;
     font-family: $header-font;
     .copywrite {
         font-size: 1rem;
@@ -22,8 +23,11 @@ footer {
         width: fit-content;
         margin: 0 0.5rem;
     }
+    #social.media {
+        color: blue;
+    }
     .fb-ic {
-        //color: linear-gradient(180deg, rgba(0,255,164,1) 0%, rgba(3,240,255,1) 100%);
+        color: linear-gradient(180deg, rgba(0,255,164,1) 0%, rgba(3,240,255,1) 100%);
         &:hover {
             //color: linear-gradient(180deg, rgba(0,255,164,1) 0%, rgba(3,240,255,1) 100%);
             //background: linear-gradient(135deg, $gradient-c-1, $gradient-c-2, $gradient-c-3, $gradient-c-4, $gradient-c-5);

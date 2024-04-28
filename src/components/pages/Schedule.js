@@ -3,6 +3,7 @@ import '../../style/main.scss';
 import Day from "../components/schedule/Day";
 import Event from "../components/schedule/Event";
 import EventData from "../data/event/EventData";
+import Navbar from "../components/Navbar";
 
 class Team extends React.Component {
     render() {
@@ -10,6 +11,7 @@ class Team extends React.Component {
         
         return (
             <div className="schedule pt-5">
+                <Navbar/>
                 <div className="container pb-5">
                     <h1 className="text-center">Schedule</h1>
                     <Day />
