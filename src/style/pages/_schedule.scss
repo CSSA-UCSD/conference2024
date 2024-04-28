@@ -6,8 +6,8 @@
         flex-wrap: wrap;
 
         .row {
-            margin-right: 15px;
-            margin-left: 15px;
+            margin-right: 70px;
+            margin-left: 70px;
             
             .content {
                 width: 100%;
@@ -16,17 +16,22 @@
                     display: flex;
                     align-items: flex-start;
 
-                    // for Day 1, Day 2 etc.
-                    .planet {
-                        transform: scaleY(-1); // Flips into correct orientation
-                        object-fit: contain;
-                    }
+                    & > .content {     
 
-                    & > .content {                
                         h1 {
+                            font-family: $body-font;
                             padding-left: 0px;
                             font-size: 3rem;
                             margin-bottom: 0;
+
+                            color: #0C1A3D;
+                            font-size: 60px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 1.8px;
+                            text-transform: uppercase;
+                            text-align: left;
                         }
 
                         h4 {
@@ -35,7 +40,18 @@
 
                         h4, span {
                             font-size: 1.7rem;
-                            font-family: $header-font;
+                            font-family: $body-font;
+                        }
+
+                        h6 {
+                            color: #FFF;
+                            font-family: $body-font;
+                            font-size: 40px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 1.2px;
+                            text-transform: capitalize;
                         }
                     }
 
@@ -91,23 +107,23 @@
             li {
                 list-style-type: none;
 
-                a {
-                    text-transform: uppercase;
-                    border-radius: 1rem;
-                    border: solid 3px $gradient-c-1;
-                    padding: 0.25rem 1.5rem;
-                    color: $accent-1;
+                // a {
+                //     text-transform: uppercase;
+                //     border-radius: 1rem;
+                //     border: solid 3px $gradient-c-1;
+                //     padding: 0.25rem 1.5rem;
+                //     color: $accent-1;
 
-                    @media (min-width: 995px) {
-                        padding: 0.25rem 4.5rem;
-                    }
-                }
-                &:hover {
-                    a {
-                        border: solid 3px rgba($gradient-c-1, 0.5);
-                        color: rgba($gradient-c-1, 0.5);
-                    }
-                }
+                //     @media (min-width: 995px) {
+                //         padding: 0.25rem 4.5rem;
+                //     }
+                // }
+                // &:hover {
+                //     a {
+                //         border: solid 3px rgba($gradient-c-1, 0.5);
+                //         color: rgba($gradient-c-1, 0.5);
+                //     }
+                // }
             }
             
             
@@ -137,4 +153,47 @@
     @media (max-width: 700px) {
         overflow: visible;
     }
+}
+
+.thank-you {
+    h1 {
+        color: #0C1A3D;
+        font-family: $body-font;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: capitalize;
+    }
+
+    color: #6C6288;
+    font-family: $body-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.event-name {
+    color: #423232;
+    font-family: $body-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#time-event {
+    color: #0C1A3D;
+    text-align: right;
+    font-family: Jost;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }

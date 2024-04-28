@@ -14,8 +14,8 @@ class Event extends React.Component {
 
         return (
             <div className="day-schedule pb-2" data-aos="fade-up">
-                <h2>{this.props.item.title}</h2>
-                <h4 className="text-right">{this.props.item.time}</h4>
+                <h2 className="event-name">{this.props.item.title}</h2>
+                <h4 className="text-right" id="time-event">{this.props.item.time}</h4>
                 {/* <p style={{'color':'#0484fb'}}>{this.props.item.description}</p> */}
                 {this.props.item.url ?
                     <div>

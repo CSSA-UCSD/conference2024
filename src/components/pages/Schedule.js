@@ -13,10 +13,9 @@ class Team extends React.Component {
             <div className="schedule pt-5">
                 <Navbar/>
                 <div className="container pb-5">
-                    <h1 className="text-center">Schedule</h1>
+                    {/* <h2 className="bd">Schedule</h2> */}
                     <Day />
                     {/* {EventComponent} */}
-
                 </div>
             </div>
         );

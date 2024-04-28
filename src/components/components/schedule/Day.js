@@ -9,6 +9,10 @@ import Event from "../../components/schedule/Event";
 import DayScheduleData from "../../data/home/DayScheduleData";
 import PlanetIcon from "../../../assets/planetIcon.png";
 
+import heartIcon from "../../../assets/heartDay1.png";
+import clubIcon from "../../../assets/clubDay2.png";
+import spadeIcon from "../../../assets/spadeDay3.png";
+
 function Day() {
 
     useEffect(() => {
@@ -35,13 +39,19 @@ function Day() {
                     {/* <div className=""> */}
                     <ul>
                         <li>
-                            <Link smooth to="#day1">Day 1</Link>
+                            <Link smooth to="#day1">
+                                <img src={heartIcon}></img>
+                            </Link>
                         </li>
                         <li>
-                            <Link smooth to="#day2">Day 2</Link>
+                            <Link smooth to="#day2">
+                                <img src={clubIcon}></img>
+                            </Link>
                         </li>
                         <li>
-                            <Link smooth to="#day3">Day 3</Link>
+                            <Link smooth to="#day3">
+                                <img src={spadeIcon}></img>
+                            </Link>
                         </li>
                     </ul>
                     {/* </div> */}
@@ -49,11 +59,13 @@ function Day() {
                 <div className="content">
                     {DayScheduleData.map(day => {
                         return <div className="day" key={day.id}>
-                            <img className="planet mx-3" src={PlanetIcon} alt="Planet Image"/>
                             <div className="content">
                                 <h1>{day.name}</h1>
-                                <h4>{getWeekday(day.date, "short")} {day.date} | {day.time}</h4>
-                                <span className="location">{day.location}</span>
+                                <h6>
+                                    {getWeekday(day.date, "short")} {day.date} | {day.time}
+                                    <br/>
+                                    <span className="location">{day.location}</span>
+                                </h6>
                                 <div className="my-5">
                                     {day.events.map((item, key) => {
                                         return < Event key={key} item={item} />
@@ -64,8 +76,7 @@ function Day() {
                         </div>
                     })}
                     <div className="day">
-                        <img className="planet mx-3" src={PlanetIcon} alt="Planet Image"/>
-                        <div className="content">
+                        <div className="thank-you">
                             <h1>THANK YOU FOR VISITING!</h1>
                             <h4>CSSA@UCSD</h4>
                             <h4 id="cssa">Cognitive Science Student Association</h4>

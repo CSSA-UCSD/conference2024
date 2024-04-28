@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import club from "../../assets/club.png";
 
 // import Logo from "../../assets/logo2023.png";
 // import LogoSVG from "../../assets/logo2023SVG.svg";
@@ -11,6 +12,7 @@ const Tab = ({tab, onClick, currTab, zoom}) => {
             ? <a href={zoom} target="_blank" rel="noreferrer" className='nav-link'>{tab}</a>
             : <Link to={`/${tab}`} className='nav-link' onClick={() => onClick(tab)}>
                 <span className={tab === currTab ? 'underline' : ''}>
+                    {tab === currTab ? <img src={club}></img> : <div></div>}
                     {tab === '' ? 'home' : tab}
                 </span>
             </Link>
