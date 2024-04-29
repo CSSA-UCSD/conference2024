@@ -19,7 +19,7 @@ function Events() {
     return (
         <div className="container pb-5">
             <Navbar/>
-            { DayScheduleData.map((day) => {
+            {/* { DayScheduleData.map((day) => {
                     let daySpeakers = SpeakerData.filter(speaker => speaker.day === day.id);
                     return <div className="mt-5" key={day.id}>
                         <h1 className="mb-5">Day <span className="ital">0{day.id}</span></h1>
@@ -29,7 +29,7 @@ function Events() {
                         }
                         </div>
                     </div>
-                })}
+                })} */}
         </div>
     )
 }

@@ -2,8 +2,7 @@ import React from "react";
 import AOS from "aos";
 
 
-class Event extends React.Component {
-
+class Event extends React.Component {    
     componentDidMount() {
         AOS.init({
             duration : 2000
@@ -28,14 +27,14 @@ class Event extends React.Component {
                     </div>
                     : null
                 }
-                {this.props.item.recording ?
+                {/* {this.props.item.recording ?
                     <div>
                         <button className="gradient-button">
-                                <a className="" href={this.props.item.recording} target="_blank" rel="noopener noreferrer">Recording</a>
+                                <a className="" href={this.props.item.recording} target="_blank" rel="noopener noreferrer">Recordings</a>
                         </button>
                     </div>
                     : null
-                }
+                } */}
         </div>
         );
     }

@@ -15,13 +15,13 @@ class DaySchedule extends React.Component {
         return (
             <div className="day-schedule pb-5" data-aos="fade-up">
                 <div className="day-schedule-content">
-                    <div className="p-4 row container">
+                    <div className="" id={weekday}>
                         <div className="day-info">
                             <h4>{weekday}</h4>
                             <h2>{this.props.item.name} - {this.props.item.date}</h2>
                             <h4><span className="loc">{this.props.item.location}</span></h4>
                             { this.props.item.events && this.props.item.events.map((event, key) => {
-                                return <p key={key}><span className="time">{event.time}</span> {event.title}</p>
+                                return <p key={key}><span className="time">{event.time}</span> - {event.title}</p>
                             })}
                         </div>
                     </div>

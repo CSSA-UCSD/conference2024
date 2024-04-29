@@ -7,7 +7,6 @@ import StickyBox from "react-sticky-box";
 
 import Event from "../../components/schedule/Event";
 import DayScheduleData from "../../data/home/DayScheduleData";
-import PlanetIcon from "../../../assets/planetIcon.png";
 
 import heartIcon from "../../../assets/heartDay1.png";
 import clubIcon from "../../../assets/clubDay2.png";
@@ -39,17 +38,17 @@ function Day() {
                     {/* <div className=""> */}
                     <ul>
                         <li>
-                            <Link smooth to="#day1">
+                            <Link smooth to="#1">
                                 <img src={heartIcon}></img>
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#day2">
+                            <Link smooth to="#2">
                                 <img src={clubIcon}></img>
                             </Link>
                         </li>
                         <li>
-                            <Link smooth to="#day3">
+                            <Link smooth to="#3">
                                 <img src={spadeIcon}></img>
                             </Link>
                         </li>
@@ -58,7 +57,7 @@ function Day() {
                 </StickyBox>
                 <div className="content">
                     {DayScheduleData.map(day => {
-                        return <div className="day" key={day.id}>
+                        return <div className="day" key={day.id} id={day.id}>
                             <div className="content">
                                 <h1>{day.name}</h1>
                                 <h6>
@@ -66,13 +65,21 @@ function Day() {
                                     <br/>
                                     <span className="location">{day.location}</span>
                                 </h6>
-                                <div className="my-5">
+                                <div className="event-list">
                                     {day.events.map((item, key) => {
                                         return < Event key={key} item={item} />
                                     })
                                     }
                                 </div>
-                            </div>
+                                {day.recording ?
+                                    <div>
+                                        <button className="gradient-button">
+                                                <a className="" href={day.recording} target="_blank" rel="noopener noreferrer">Recordings</a>
+                                        </button>
+                                    </div>
+                                    : null
+                                }
+                                </div>
                         </div>
                     })}
                     <div className="day">

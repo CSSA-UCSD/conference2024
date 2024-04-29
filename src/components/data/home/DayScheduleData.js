@@ -10,7 +10,7 @@ const DayScheduleData = [
             {
                 title: "Welcome Introduction",
                 time: "5:00 - 5:05 PM",
-                recording: ""
+                recording: "hello.com"
             },
             {
                 title: "Keynote Speaker: Dr. David Danks",
@@ -28,6 +28,7 @@ const DayScheduleData = [
             }
         ],
         url: "",
+        recording: "hello.com",
     },
     {
         id: 2,
@@ -52,6 +53,7 @@ const DayScheduleData = [
             }
         ],
         url: "",
+        recording: "hello",
     },
     {
         id: 3,
@@ -81,6 +83,7 @@ const DayScheduleData = [
             },
         ],
         url: "",
+        recording: "hello",
     },
 ]
 

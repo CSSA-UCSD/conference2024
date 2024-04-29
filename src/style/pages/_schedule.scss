@@ -1,4 +1,4 @@
-.schedule {
+.schedule {    
     .day-schedule {
         display: flex;
         justify-content: space-between;
@@ -11,6 +11,7 @@
             
             .content {
                 width: 100%;
+                margin: 40px;
                 
                 .day {
                     display: flex;
@@ -180,18 +181,22 @@
 .event-name {
     color: #423232;
     font-family: $body-font;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
 }
 
+.event-list {
+    margin-bottom: 10px;
+}
+
 #time-event {
     color: #0C1A3D;
     text-align: right;
     font-family: Jost;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

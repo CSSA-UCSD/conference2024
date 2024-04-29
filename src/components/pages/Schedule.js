@@ -10,12 +10,16 @@ class Team extends React.Component {
         const EventComponent = EventData.map(item => < Event key={item.id} item={item}/>);
         
         return (
-            <div className="schedule pt-5">
-                <Navbar/>
-                <div className="container pb-5">
-                    {/* <h2 className="bd">Schedule</h2> */}
-                    <Day />
-                    {/* {EventComponent} */}
+            <div >
+                <div className="ps-10">
+                    <Navbar/>
+                </div>
+                <div className="schedule pt-5 d-flex flex-column align-items-center">
+                    <div className="container pb-5">
+                        {/* <h2 className="bd">Schedule</h2> */}
+                        <Day />
+                        {/* {EventComponent} */}
+                    </div>
                 </div>
             </div>
         );
