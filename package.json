@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cssa-ucsd.github.io/conference2023",
+  "homepage": "https://cssa-ucsd.github.io/conference2024",
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@testing-library/jest-dom": "^4.2.4",
