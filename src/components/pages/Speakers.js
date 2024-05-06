@@ -29,24 +29,24 @@ function Events() {
             <div className="pt-5">
                 <div className="pb-5">
                     <h1 className="text-center">Day <span className="ital">1</span></h1>
-                    <div className="row">
+                    <div className="d-flex flex-row flex-wrap justify-content-center">
                         {dayOneSpeakers.map(item =>
                             <Speaker key={item.id} item={item} />
                         )}
                     </div>
                         <h1 className="text-center">Day <span className="ital">2</span></h1>
-                        <div className="row">
+                        <div className="d-flex flex-row flex-wrap justify-content-center">
                             {dayTwoSpeakers.map(item =>
                                 <Speaker key={item.id} item={item} />
                             )}
                         </div>
 
-                        <h1 className="text-center">Day <span className="ital">3</span></h1>
-                        <div className="row">
+                        {/* <h1 className="text-center">Day <span className="ital">3</span></h1>
+                        <div className="d-flex flex-row flex-wrap justify-content-center">
                             {dayThreeSpeakers.map(item =>
                                 <Speaker key={item.id} item={item} />
                             )}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             

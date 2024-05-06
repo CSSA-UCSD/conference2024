@@ -3,6 +3,30 @@
     background: linear-gradient(180deg, rgba(115, 102, 117, 0.48) 0%, rgba(168, 146, 112, 0.60) 100%),
     linear-gradient(180deg, rgba(98, 121, 141, 0.60) 0%, rgba(80, 63, 58, 0.60) 83%);
 
+    .speaker-img {
+        width: 490px;
+        height: 490px;
+    }
+
+    #speaker-img {
+        height: auto;
+        max-height: 250px;
+        width: auto;
+        max-width: 250px;
+    }
+
+    .speaker {
+        width: 490px;
+        height: 490px;
+    }
+
+    .text {
+        text-align: center;
+
+        h5 {
+            font-family: $body-font;
+        }
+    }
     // /* Speaker Images */
     // @include media-md {
     //     img {

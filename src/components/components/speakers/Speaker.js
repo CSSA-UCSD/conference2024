@@ -3,6 +3,7 @@ import AOS from "aos";
 
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import icon from "../../../img/speakers/DavidDanks.jpg";
 
 class Speaker extends React.Component {
 
@@ -14,49 +15,63 @@ class Speaker extends React.Component {
 
     render() {
         return (
-            <Popup
-                trigger={
-                // <button className="button col-md-6 col-lg-3 py-3"> 
-                <button className="button speaker-button col py-3"> 
-                <div className="speaker" data-aos="fade-up" id={this.props.item.id}>
-                    <div className="speaker-img">
-                        <img src={ require(`../../../img/speakers/${this.props.item.img}`).default } 
-                            alt={this.props.item.name} ></img>
-                    </div>
-                    <div className="speaker-title">
-                        <h5>{this.props.item.name}</h5>
-                        <p>{this.props.item.title}</p>
-                    </div>
+            <div className="speaker d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" id={this.props.item.id}>
+                <div className="">
+                    <img id="speaker-img" src={ require(`../../../img/speakers/${this.props.item.img}`)}
+                            alt={this.props.item.name}>
+                    </img>
                 </div>
-                </button>}
-                modal
-                nested
-            >
-                {close => (
-                <div className="modal">
-                    <button className="close" onClick={close}>
-                    &times;
-                    </button>
-                    <div className="header"> <h5>{this.props.item.name}</h5>
-                    </div>
-                    <div className="content row">
-                        <div className="col-md-6 d-flex align-items-center pl-3" style={{'margin': 'auto'}}>
-                            <div className="header-description">
-                            <img src={ require(`../../../img/speakers/${this.props.item.img}`).default } 
-                                alt={this.props.item.name} ></img>
-                                <p className="header-description-title">
-                                    <a className="header-description-link" href={this.props.item.link}>{this.props.item.title}</a>
-                                </p>
-                                <p className="header-description-event">{this.props.item.event}</p>
-                            </div>
-                        </div>
-                        {/* <div className="col-md-6 bio">
-                            <p>{this.props.item.bio}</p>
-                        </div> */}
-                    </div>
+                <div className="text mt-3">
+                    <h5>{this.props.item.name}</h5>
+                    <p>{this.props.item.title}</p>
                 </div>
-                )}
-            </Popup> 
+            </div>
+            // <Popup
+            //     trigger={
+            //     // <button className="button col-md-6 col-lg-3 py-3"> 
+            //     <button className="button speaker-button col py-3"> 
+            //     <div className="speaker" data-aos="fade-up" id={this.props.item.id}>
+            //         <img id="speaker-img" src={ require(`../../../img/speakers/${this.props.item.img}`)} 
+            //             alt={this.props.item.name} ></img>
+            //         <h5>{this.props.item.name}</h5>
+            //             <p>{this.props.item.title}</p>
+            //         {/* <div className="speaker-img">
+            //             <img id="speaker-img" src={ require(`../../../img/speakers/${this.props.item.img}`)} 
+            //                 alt={this.props.item.name} ></img>
+            //         </div>
+            //         <div className="speaker-title">
+                        
+            //         </div> */}
+            //     </div>
+            //     </button>}
+            //     modal
+            //     nested
+            // >
+            //     {close => (
+            //     <div className="modal">
+            //         <button className="close" onClick={close}>
+            //         &times;
+            //         </button>
+            //         <div className="header"> <h5>{this.props.item.name}</h5>
+            //         </div>
+            //         <div className="content row">
+            //             <div className="col-md-6 d-flex align-items-center pl-3" style={{'margin': 'auto'}}>
+            //                 <div className="header-description">
+            //                 <img src={ require(`../../../img/speakers/${this.props.item.img}`).default } 
+            //                     alt={this.props.item.name} ></img>
+            //                     <p className="header-description-title">
+            //                         <a className="header-description-link" href={this.props.item.link}>{this.props.item.title}</a>
+            //                     </p>
+            //                     <p className="header-description-event">{this.props.item.event}</p>
+            //                 </div>
+            //             </div>
+            //             {/* <div className="col-md-6 bio">
+            //                 <p>{this.props.item.bio}</p>
+            //             </div> */}
+            //         </div>
+            //     </div>
+            //     )}
+            // </Popup> 
         );
     }
 }
