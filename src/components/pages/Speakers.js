@@ -16,20 +16,40 @@ function Events() {
         });
     })
 
+    let dayOneSpeakers = SpeakerData.filter(speaker => speaker.day === 1);
+    let dayTwoSpeakers = SpeakerData.filter(speaker => speaker.day === 2);
+    let dayThreeSpeakers = SpeakerData.filter(speaker => speaker.day === 3);
+
     return (
-        <div className="container pb-5">
-            <Navbar/>
-            {/* { DayScheduleData.map((day) => {
-                    let daySpeakers = SpeakerData.filter(speaker => speaker.day === day.id);
-                    return <div className="mt-5" key={day.id}>
-                        <h1 className="mb-5">Day <span className="ital">0{day.id}</span></h1>
-                        <div className="row justify-content-center">
-                        {
-                            daySpeakers.map(item => <Speaker key={item.id} item={item} />)
-                        }
+        <div>
+            <div className="ps-10">
+                <Navbar />
+            </div>
+
+            <div className="pt-5">
+                <div className="pb-5">
+                    <h1 className="text-center">Day <span className="ital">1</span></h1>
+                    <div className="row">
+                        {dayOneSpeakers.map(item =>
+                            <Speaker key={item.id} item={item} />
+                        )}
+                    </div>
+                        <h1 className="text-center">Day <span className="ital">2</span></h1>
+                        <div className="row">
+                            {dayTwoSpeakers.map(item =>
+                                <Speaker key={item.id} item={item} />
+                            )}
+                        </div>
+
+                        <h1 className="text-center">Day <span className="ital">3</span></h1>
+                        <div className="row">
+                            {dayThreeSpeakers.map(item =>
+                                <Speaker key={item.id} item={item} />
+                            )}
                         </div>
                     </div>
-                })} */}
+                </div>
+            
         </div>
     )
 }
