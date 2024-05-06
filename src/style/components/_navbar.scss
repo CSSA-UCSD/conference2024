@@ -25,14 +25,24 @@
         
         .underline {
             border-bottom: 3px solid white;
-            
         }
 
         #register {
             border-radius: 15px;
             background: linear-gradient(244deg, rgba(185, 249, 253, 0.75) 37.36%, rgba(255, 255, 255, 0.75) 64.99%);
             border: 3px solid #6C6288;
+            color: #0C1A3D;
+            text-transform: uppercase;
 
+            display: inline-flex; /* Use inline-flex to treat the button as a flex container */
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            padding: 15px 15px;
+            cursor: pointer;
+
+            h6 {
+                margin: 0px;
+            }
             span {
                 color: #0C1A3D;
             }

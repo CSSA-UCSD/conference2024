@@ -88,9 +88,9 @@ const Home = () => {
                             Excepteur sint occaecat cupidatat non proident.
                         </p>    
                     </div> 
-                    <div className="home-intro-video py-5">
+                    {/* <div className="home-intro-video py-5">
                             <iframe className="rounded" title="conference-2022" width="100%" height="300" src="https://www.youtube.com/watch?v=Gx60wEdPc7w" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
+                    </div> */}
                     <div className="speakers">
                         <div>
                             <h2 id="speakers-title"><Link to='/speakers' className='header-link'>Speakers of the Day</Link></h2>

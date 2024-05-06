@@ -2,30 +2,40 @@ const DayScheduleData = [
     {
         id: 1,
         name: "Day One",
-        date: "5/1/2023",
-        weekday: "Monday",
-        time: "5:00 - 7:30 PM PDT",
+        date: "5/11/2024",
+        weekday: "Saturday",
+        time: "10:00 AM - 3:00 PM PDT",
         location: "Bear Room @ PC West",
         events: [
             {
-                title: "Welcome Introduction",
-                time: "5:00 - 5:05 PM",
+                title: "Welcome",
+                time: "10:00 AM - 10:10 AM",
                 recording: "hello.com"
             },
             {
-                title: "Keynote Speaker: Dr. David Danks",
-                time: "5:05 - 5:50 PM",
+                title: "Talk: Professor Andrea Chiba",
+                time: "10:10 AM - 11:00 AM",
                 recording: ""
             },
             {
-                title: "Social Activity/Break",
-                time: "5:50 - 6:20 PM"
+                title: "Talk: Parag Bharadwaj",
+                time: "11:05 AM - 11:55 AM"
             },
             {
-                title: "Workshop: Dr. Lina Abarbanell",
-                time: "6:20 - 7:10 PM",
+                title: "Tea Time",
+                time: "11:55 AM - 12:45 PM",
                 recording: ""
-            }
+            },
+            {
+                title: "Talk: Shad Reyes",
+                time: "1:00 PM - 1:50 PM",
+                recording: ""
+            },
+            {
+                title: "Talk: Dave Smith-Uchida",
+                time: "1:55 PM - 2:45 PM",
+                recording: ""
+            },
         ],
         url: "",
         recording: "hello.com",
@@ -33,54 +43,40 @@ const DayScheduleData = [
     {
         id: 2,
         name: "Day Two",
-        date: "5/2/2023",
-        time: "5:00-7:10 PM PDT",
+        date: "5/12/2024",
+        time: "11:00 AM -4:00 PM PDT",
+        weekday: "Sunday",
         location: "Green Table Room @ PC West",
         events: [
             {
-                title: "Keynote Speaker: Dr. Meghan Yiu",
-                time: "5:00 - 5:50 PM",
+                title: "Welcome",
+                time: "11:00 AM - 11:10 AM",
                 recording: ""
             },
             {
-                title: "Social Activity/Break",
-                time: "5:50 - 6:20 PM"
+                title: "Talk: Bryan Min",
+                time: "11:10 AM - 12:10 PM"
             },
             {
-                title: "Workshop: Sam Hande",
-                time: "6:20 - 7:10 PM",
+                title: "Talk: Professor Anne Beatty-Martínez",
+                time: "12:15 PM - 1:05 PM",
+                recording: ""
+            }, 
+            {
+                title: "Networking Session",   
+                time: "1:05 PM - 2:05 PM",
+                recording: ""
+            },
+            {
+                title: "Talk: Dr. Dago Cruz Sandoval",
+                time: "2:15 PM - 3:05 PM",
+                recording: ""
+            },
+            {
+                title: "Talk: Professor David Kirsh",
+                time: "3:10 PM - 4:00 PM",
                 recording: ""
             }
-        ],
-        url: "",
-        recording: "hello",
-    },
-    {
-        id: 3,
-        name: "Day Three",
-        date: "5/3/2023",
-        time: "5:00 - 7:10 PM PDT",
-        location: "Red Shoe Room @ PC West",
-        events: [
-            {
-                title: "Workshop: Dr. Lauren Patrick",
-                time: "5:00 - 5:50 PM",
-                recording: ""
-            }, 
-            {
-                title: "Social Activity/Break",
-                time: "5:50 - 6:20 PM"
-            },
-            {
-                title: "Workshop: Dr. Yang Xu",
-                time: "6:20 - 7:10 PM",
-                recording: ""
-            }, 
-            {
-                title: "Workshop: Maho Takahashi",
-                time: "6:20 - 7:10 PM",
-                recording: ""
-            },
         ],
         url: "",
         recording: "hello",

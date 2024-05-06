@@ -39,7 +39,10 @@ const Navbar = () => {
                         <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/w/93617051961" />
                     </ul>
                 </div>
-                <Tab id="register" tab="register" onClick={changeTab} currTab={currTab}/>
+                <a href="https://forms.gle/Z7UEUd7pnifhzyB3A" target="_blank">
+                    <button id="register" tab="register"><h6>Register</h6></button>
+                </a>
+                {/* <Tab id="register" tab="register" onClick={changeTab} currTab={currTab}/> */}
                 {/* <Link to="/" className="navbar-brand">
                     <img src={LogoSVG} alt="CSSA @ UCSD Conference Logo" 
                         onMouseOver={e => e.currentTarget.src=Logo}
