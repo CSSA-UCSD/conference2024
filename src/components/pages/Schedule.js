@@ -10,7 +10,7 @@ class Team extends React.Component {
         const EventComponent = EventData.map(item => < Event key={item.id} item={item}/>);
         
         return (
-            <div >
+            <div className="schedule-pg-bg">
                 <div className="ps-10">
                     <Navbar/>
                 </div>

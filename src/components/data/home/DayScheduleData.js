@@ -5,7 +5,7 @@ const DayScheduleData = [
         date: "5/11/2024",
         weekday: "Saturday",
         time: "10:00 AM - 3:00 PM PDT",
-        location: "Bear Room @ PC West",
+        location: "PC Theater",
         events: [
             {
                 title: "Welcome",
@@ -13,7 +13,7 @@ const DayScheduleData = [
                 recording: "hello.com"
             },
             {
-                title: "Talk: Professor Andrea Chiba",
+                title: "Talk: Dr. Andrea Chiba",
                 time: "10:10 AM - 11:00 AM",
                 recording: ""
             },
@@ -46,7 +46,7 @@ const DayScheduleData = [
         date: "5/12/2024",
         time: "11:00 AM -4:00 PM PDT",
         weekday: "Sunday",
-        location: "Green Table Room @ PC West",
+        location: "Forum Room @ PC",
         events: [
             {
                 title: "Welcome",
@@ -58,7 +58,7 @@ const DayScheduleData = [
                 time: "11:10 AM - 12:10 PM"
             },
             {
-                title: "Talk: Professor Anne Beatty-Martínez",
+                title: "Talk: Dr. Anne Beatty-Martínez",
                 time: "12:15 PM - 1:05 PM",
                 recording: ""
             }, 

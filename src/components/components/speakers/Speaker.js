@@ -3,7 +3,6 @@ import AOS from "aos";
 
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import icon from "../../../img/speakers/DavidDanks.jpg";
 
 class Speaker extends React.Component {
 

@@ -4,8 +4,8 @@ const SpeakerData = [
         name: "Dave Smith-Uchida",
         day: 1,
         event: "Day 1 (5/1) Keynote Speaker",
-        img: "Dave Smith-Uchida.png",
-        title: "Machine Learning",
+        img: "daveSmithUchida.png",
+        title: "Technical Leader @ Veeam",
         bio: "",
         link: ""
     },
@@ -14,8 +14,8 @@ const SpeakerData = [
         name: "Parag Bharadwaj",
         day: 1,
         event: "Day 1 Workshop: Language, Culture, and Cognition Talk",
-        img: "parag bharadwaj.jpg",
-        title: "Machine Learning",
+        img: "parag bharadwaj(1).jpg",
+        title: "Medical Director @ MemorialCare",
         bio: "",
         link: ""
     },
@@ -24,28 +24,28 @@ const SpeakerData = [
         name: "Shad Reyes",
         day: 1,
         event: "Day 2 (5/2) Workshop: UX Pathways Talk",
-        img: "MeghanYiu.jpeg",
-        title: "Machine Learning",
+        img: "shadReyes.jpeg",
+        title: "SWE @ Toast, prev. Amazon",
         bio: "",
-        link: "https://www.linkedin.com/in/meghanyiu/"
+        link: ""
     },
     {
         id: 4,
-        name: "Andrea Chiba",
+        name: "Dr. Andrea Chiba",
         day: 1,
         event: "Day 2 Workshop: UX Pathways Talk",
-        img: "KaylaMonnette.png",
-        title: "Neuroscience",
+        img: "andreaChiba.jpeg",
+        title: "Professor @ UCSD | Neuroscience",
         bio: "",
-        link: "https://www.linkedin.com/in/kaylamonnette/"
+        link: ""
     },
     {
         id: 5,
-        name: "Anne Beatty-Martinez",
+        name: "Dr. Anne Beatty-Martinez",
         day: 2,
         event: "Day 2 Workshop",
         img: "Anne Beatty-Martinez photo.jpg",
-        title: "Linguistics",
+        title: "Professor @ UCSD | Linguistics",
         bio: "",
         link: ""
     },
@@ -55,29 +55,29 @@ const SpeakerData = [
         day: 2,
         event: "Day 2 Workshop",
         img: "BryanMin.jpeg",
-        title: "PhD student at UC San Diego, advised by Professor Haijun Xia",
+        title: "PhD student @ UCSD | Design",
         bio: "",
-        link: "https://www.linkedin.com/in/philliplagoc/"
+        link: ""
     },
     {
         id: 7,
-        name: "Dago Cruz Sandoval",
+        name: "Dr. Dago Cruz Sandoval",
         day: 2,
         event: "Day 3 (5/3) Workshop",
-        img: 'LaurenPatrick.jpeg',
-        title: "Design",
+        img: 'dagoSantoval.png',
+        title: "Postdoctoral Researcher @ Healthcare Robotics Lab | Design",
         bio: "",
-        link: "https://www.linkedin.com/in/lauren-patrick-phd-0400b888/",
+        link: "",
     },
     {
         id: 8,
-        name: "David Kirsh",
+        name: "Professor David Kirsh",
         day: 2,
         event: "Day 3 Workshop",
-        img: 'YangXu.jpeg',
-        title: "Design",
+        img: 'davidKirsh.png',
+        title: "Professor @ UCSD | Design",
         bio: "",
-        link: "https://www.linkedin.com/in/yang-xu-0aa92036/"
+        link: ""
     }
 ]
 

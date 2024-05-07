@@ -1,7 +1,9 @@
 .speakers {
-    // background-image: url("../../assets/tagsBackground.png");
-    background: linear-gradient(180deg, rgba(115, 102, 117, 0.48) 0%, rgba(168, 146, 112, 0.60) 100%),
-    linear-gradient(180deg, rgba(98, 121, 141, 0.60) 0%, rgba(80, 63, 58, 0.60) 83%);
+    // background-image: url("../../assets/blueTagBg.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url("../../assets/blueTagBg.png");
+    // background: linear-gradient(180deg, rgba(115, 102, 117, 0.48) 0%, rgba(168, 146, 112, 0.60) 100%),
+    // linear-gradient(180deg, rgba(98, 121, 141, 0.60) 0%, rgba(80, 63, 58, 0.60) 83%);
 
     .speaker-img {
         width: 490px;

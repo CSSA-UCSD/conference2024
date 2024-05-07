@@ -1,4 +1,8 @@
-.schedule {    
+.schedule-pg-bg {
+    background-image: url("../../assets/tagsBackground.png");
+    background-repeat: round;
+}
+.schedule {  
     .day-schedule {
         display: flex;
         justify-content: space-between;
@@ -158,7 +162,7 @@
 
 .thank-you {
     h1 {
-        color: #0C1A3D;
+        color: $primary-light;
         font-family: $body-font;
         font-size: 60px;
         font-style: normal;
@@ -168,7 +172,7 @@
         text-transform: capitalize;
     }
 
-    color: #6C6288;
+    color: $primary-light;
     font-family: $body-font;
     font-size: 40px;
     font-style: normal;
@@ -179,7 +183,7 @@
 }
 
 .event-name {
-    color: #423232;
+    color: $accent-3;
     font-family: $body-font;
     font-size: 30px;
     font-style: normal;
@@ -193,7 +197,7 @@
 }
 
 #time-event {
-    color: #0C1A3D;
+    color: $accent-3;
     text-align: right;
     font-family: Jost;
     font-size: 30px;

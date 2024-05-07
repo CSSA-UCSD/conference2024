@@ -13,7 +13,7 @@ class SpeakerPreview extends React.Component {
                 <a href={`/speakers/#` + this.props.item.id}>
                
                     <div className="pb-3">
-                        <img className="speaker-img" src={require(`../../../img/speakers/${this.props.item.img}`).default}
+                        <img className="speaker-img-carousel img-fluid" src={require(`../../../img/speakers/${this.props.item.img}`)}
                             alt={this.props.item.name} ></img>
                         <div className="speaker-title my-3">
                             <h5>{this.props.item.name}</h5>

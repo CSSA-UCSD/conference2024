@@ -29,14 +29,14 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar my-4">
+        <nav className="navbar py-4">
             <div className="container">
                 <div className="menu">
                     <ul className="nav">
                         <Tab tab='' onClick={changeTab} currTab={currTab}/>
                         <Tab tab="schedule" onClick={changeTab} currTab={currTab}/>
                         <Tab tab="speakers" onClick={changeTab} currTab={currTab}/>
-                        <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/w/93617051961" />
+                        {/* <Tab tab="zoom" onClick={changeTab} currTab={currTab} zoom="https://ucsd.zoom.us/w/93617051961" /> */}
                     </ul>
                 </div>
                 <a href="https://forms.gle/Z7UEUd7pnifhzyB3A" target="_blank">

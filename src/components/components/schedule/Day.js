@@ -71,14 +71,14 @@ function Day() {
                                     })
                                     }
                                 </div>
-                                {day.recording ?
+                                {/* {day.recording ?
                                     <div>
                                         <button className="gradient-button">
                                                 <a className="" href={day.recording} target="_blank" rel="noopener noreferrer">Recordings</a>
                                         </button>
                                     </div>
                                     : null
-                                }
+                                } */}
                                 </div>
                         </div>
                     })}

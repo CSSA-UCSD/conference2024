@@ -95,8 +95,7 @@ const Home = () => {
                         <div>
                             <h2 id="speakers-title"><Link to='/speakers' className='header-link'>Speakers of the Day</Link></h2>
                         </div>  
-                        <p className="px-5 mb-5 text-center">Soon to be released!</p>
-                        {/* <div className="speakers-carousel">
+                        <div className="speakers-carousel">
                                     <Carousel 
                                     responsive={responsive}
                                     infinite={true}
@@ -109,7 +108,7 @@ const Home = () => {
                                     >
                                     {SpeakerComponent}
                                     </Carousel>
-                                </div> */}
+                                </div>
                     </div>
                     <div className="schedule">
                         <h2><Link to='/schedule' className='header-link'> Schedule</Link></h2>
