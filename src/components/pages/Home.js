@@ -73,7 +73,7 @@ const Home = () => {
                     <Navbar />
                     <h1>Through the Looking Glass</h1>
                     <div className="row my-5">
-                        <p className="col-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <p className="col-md-5">CSSA's 17th annual National Cognitive Science Conference is happening from May 11 to May 12!</p>
                         <div className="home-img col-md-7 d-flex align-items-center">
                             <img src={cssaLogo} alt="conference icon" />
                         </div>
@@ -81,11 +81,12 @@ const Home = () => {
                     <div id="about">
                         <h2>About</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident.
+                            This year&apos;s conference, Through The Looking Glass, is themed on the fabled tale of Alice&apos;s 
+                            Adventures in Wonderland. As anyone who knows cognitive science will tell you, the field in itself 
+                            is a series of adventures through different worlds of neuroscience, artificial intelligence, linguistics, 
+                            design and so much more. Through the speakers, which include distinguished professors and industry professionals, 
+                            learn about the cutting edge work they are doing and learn about ways that you can advance your own career, whether
+                            you are planning to continue in academia or work in the industry.
                         </p>    
                     </div> 
                     {/* <div className="home-intro-video py-5">
@@ -93,7 +94,7 @@ const Home = () => {
                     </div> */}
                     <div className="speakers">
                         <div>
-                            <h2 id="speakers-title"><Link to='/speakers' className='header-link'>Speakers of the Day</Link></h2>
+                            <h2 id="speakers-title"><Link to='/speakers' className='header-link'>Speakers</Link></h2>
                         </div>  
                         <div className="speakers-carousel">
                                     <Carousel 
